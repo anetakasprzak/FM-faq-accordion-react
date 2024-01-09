@@ -1,0 +1,152 @@
+:root {
+  font-family: "Work Sans", sans-serif;
+  line-height: 2.1rem;
+  font-weight: 400;
+  color: #301534;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 37.5rem;
+  height: auto;
+  padding: 2.4rem 2.4rem 10rem 2.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../public/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: #f8eeff;
+}
+
+.component {
+  margin-top: 12rem;
+  background-color: #fff;
+  width: 100%;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.1);
+}
+
+.heading__box {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  border-bottom: 1px solid #f8eeff;
+}
+
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.accordion__heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  max-width: 22.5rem;
+}
+
+.accordion__text {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #8b6990;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 90em) {
+  :root {
+    line-height: 2.4rem;
+  }
+
+  .wrapper {
+    width: 144rem;
+    height: auto;
+    justify-content: center;
+    background-image: url("../public/images/background-pattern-desktop.svg");
+  }
+
+  .component {
+    margin-top: 12rem;
+    width: 60rem;
+    padding: 4rem;
+    border-radius: 1.6rem;
+  }
+
+  .heading__box {
+    display: flex;
+    gap: 2.4rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    font-size: 5.6rem;
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion__title {
+    padding: 2.4rem 0 2.4rem 0;
+    transition: all 0.2s;
+  }
+
+  .accordion__title:hover {
+    cursor: pointer;
+    color: #ad28eb;
+  }
+
+  .accordion__heading {
+    font-size: 1.8rem;
+    max-width: max-content;
+  }
+
+  .accordion__text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+}
